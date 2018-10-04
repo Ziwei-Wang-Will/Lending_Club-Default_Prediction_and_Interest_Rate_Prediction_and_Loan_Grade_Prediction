@@ -380,11 +380,33 @@ Dataset is downloaded from https://www.lendingclub.com/info/download-data.action
         - earliest_cr_line
             - Description: The month the borrower's earliest reported credit line was opened. 
             - Transformation: compare itself with the maximum value (2018-03-01) in issue_d. (Using the maximum value in issue_d as a benchmark to compare with earliest_cr_line is reasonable because if the day difference is larger, it might indicate that a loan applicant had a long credit history before, which might further indicate that a loan applicant could fully paid a loan application with a higher probability.)    
-    - 4.2 Features with a wrong data type
-    - 4.3 Categorical features with too many levels
-    - 4.4 Final check
-5. Outliers imputation
-6. Feature selection by feature significance
+    - Features with a wrong data type
+        - int_rate:
+            - Description: Iterest rate on the loan.
+            - Transformation: Change data type from 'string' to 'float'.
+    - Categorical features with too many levels
+        - addr_state:
+            - Description: The state provided by the borrower in the loan application.
+            - Transformation: Assign each state by west or east coast and drop zip_code column.
+    - Log transformation for skewed features
+        - Features:
+            - annual_inc: The self-reported annual income provided by the borrower during registration. 
+            - avg_cur_bal: Average current balance of all accounts.
+            - tot_cur_bal: Total current balance of all accounts.
+            - mo_sin_rcnt_tl: Months since most recent account opened.
+            - mort_acc: Number of mortgage accounts.
+            - mths_since_recent_bc: Months since most recent bankcard account opened.
+            - tot_hi_cred_lim: Total high credit/credit limit.
+            - total_bal_ex_mort: Total credit balance excluding mortgage.
+            - total_bc_limit: Total bankcard high credit/credit limit.
+        - Transformation: In the previoous section 'Data_Exploration', we find these features with a very skewed distribution, we perform log transformation for these feature here.   
+    - Final check
+        - Final check I: NA values
+            - These are variables forgot to drop after complete the transformation
+        - Final check II: features with only one unique value among all records (no prediction power)
+        - Final check III: manually scan the data type & columns forgot to drop
+- Outliers imputation
+- Feature selection by feature significance
     - 6.1 Numerical type of features: using t-test
     - 6.2 Categorical type of features: using chi-square test
 7. Save the final dataset into a csv file for a later model fitting operation
