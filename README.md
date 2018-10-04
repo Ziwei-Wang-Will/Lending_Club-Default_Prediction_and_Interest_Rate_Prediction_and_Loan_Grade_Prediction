@@ -62,6 +62,37 @@ pending-report
     - User feature (financial specific - credit lines)
 - [**Detailed Code and Plotting**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/code/Lending_Club_Data_Exploration.ipynb)
 
+### 2. Missing values imputation
+- Goal
+    - Three interesting problems (demonstrated as columns below) can be solved given this dataset.
+        - grade
+        - int_rate
+        - loan_status
+    - For this section, I mainly focus in 'loan_status'. 
+        - My goal is trying to predict the loan repayment capacity for each loan applicant of each loan application. Furthermore, I started by creating a boolean type of 'loan_status'.
+        - Create 'loan_status_binary', my target response variable 
+        - 0 means a loan_status is either 'Fully Paid' or 'Current'
+        - 1 means the rest values of loan_status 
+- Numerical features
+    - Deal with numerical features containing at least 80% NA values.
+        - Irrelevant features
+        - Joint-type features
+        - Secondary applicant related features
+        - Hardship related features
+        - Settlement related features
+        - Other numerical features
+    - Deal with numerical features containing at least 1 NA vlaue.
+        - Month type features
+        - The rest of features 
+- Categorical features
+    - Deal with categorical features containing at least 80% NA values.
+        - Irrelevant features
+        - Hardship related features
+        - Settlement related features
+        - Other features
+    - Other categorical features containing at least one NA value.
+        - Month type features
+        - The rest of features
 
 
 
