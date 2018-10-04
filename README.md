@@ -93,6 +93,33 @@ pending-report
     - Other categorical features containing at least one NA value.
         - Month type features
         - The rest of features
+- [**Detailed Code**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/code/Lending_Club_Data_Preprocessing_and_Feature_Engineering.ipynb)
+
+### 3. Feature transformation
+- Datetime type features transformation
+- Features with a wrong data type
+- Categorical features with too many levels
+- Log transformation for skewed features
+- Final check
+    - Final check I: NA values
+            - These are variables forgot to drop after complete the transformation
+    - Final check II: features with only one unique value among all records (no prediction power)
+    - Final check III: manually scan the data type & columns forgot to drop
+- [**Detailed Code**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/code/Lending_Club_Data_Preprocessing_and_Feature_Engineering.ipynb)
+
+### 4. Outliers imputation
+- Manipulate outliers with IQR method
+- [**Detailed Code**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/code/Lending_Club_Data_Preprocessing_and_Feature_Engineering.ipynb)
+
+### 5. Feature selection by feature significance
+- Numerical type of features: using t-test
+- Categorical type of features: using chi-square test
+- [**Detailed Code**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/code/Lending_Club_Data_Preprocessing_and_Feature_Engineering.ipynb)
+
+### 6. Default_Prediction
+### 7. Interest_Rate_Prediction
+### 8. Loar_Grade_Prediction
+
 
 
 
