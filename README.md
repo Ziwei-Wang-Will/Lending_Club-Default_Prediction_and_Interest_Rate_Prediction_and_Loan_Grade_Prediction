@@ -17,14 +17,13 @@ pending-report
 - In our work, we bulid models to predict **Default**, **Interest Rate** and **Loan Grade**.
 
 ## Dataset description
-Dataset is downloaded from [**Lending Club Statistics
-$ Invite Friends**](https://www.lendingclub.com/info/download-data.action).
+Dataset is downloaded from [**Lending Club Statistics**](https://www.lendingclub.com/info/download-data.action).
 - These files contain complete loan data for all loans issued in 2018Q1, including the current loan status (Current, Late, Fully Paid, etc.) and latest payment information. 
 - The file containing loan data through the "present" contains complete loan data for all loans issued through the previous completed calendar quarter. 
 - 'LoanStats_2018Q1.csv' contains loan application records from January 2018 to March 2018.
     - 107866 loan applications.
     - 145 features.
-    -[**Data is available here**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/data/LoanStats_2018Q1.csv.zip)
+    - [**Data is available here**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/data/LoanStats_2018Q1.csv.zip)
 - I classify all 145 features into eight types:
     - User feature (general)
     - User feature (financial specific)
@@ -37,7 +36,7 @@ $ Invite Friends**](https://www.lendingclub.com/info/download-data.action).
     - Secondary applicant info
     - Hardship 
     - Settlement
-    -[**Grouped features dictionary is available here**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/data/LC_DataDictionary.xlsx)
+    - [**Grouped features dictionary is available here**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/data/LC_DataDictionary.xlsx)
 
 ## Analysis Structure
 1. Data_Exploration
