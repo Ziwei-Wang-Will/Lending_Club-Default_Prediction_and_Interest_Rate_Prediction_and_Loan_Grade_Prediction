@@ -117,8 +117,46 @@ pending-report
 - [**Detailed Code**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/code/Lending_Club_Data_Preprocessing_and_Feature_Engineering.ipynb)
 
 ### 6. Default_Prediction
+- Modeling
+    - Logistic Regression
+    - Random Forest 
+    - Gradient Boosting Decision Tree
+- Summary
+    - Feature Conclusion
+        - Features' coefficients estimated by Logistic Regression: pending
+        - Features' coefficients estimated by Logistic Regression:pending
+        - Features' importances by Random Forest: pending
+    - Model Deployment
+        - pending
+- [**Detailed Code**](pending)
+
 ### 7. Interest_Rate_Prediction
+- Modeling
+    - Bagged Decision Tree Regression
+    - Random Forest Regression
+    - Gradient Boosting Regression
+- Summary
+    - Feature Conclusion (by Random Forest Regression)
+        - pending
+    - Model Comparison (Metric evaulations)
+        - pending
+    - Next Step
+        - pending
+- [**Detailed Code**](pending)
+
 ### 8. Loar_Grade_Prediction
+- Modeling
+    - Logistic Regression
+    - Random Forest 
+    - Gradient Boosting Decision Tree
+- Summary
+    - Feature Conclusion
+        - Features' coefficients estimated by Logistic Regression: pending
+        - Features' coefficients estimated by Logistic Regression:pending
+        - Features' importances by Random Forest: pending
+    - Model Deployment
+        - pending
+- [**Detailed Code**](pending)
 
 
 
