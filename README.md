@@ -60,8 +60,7 @@ pending-report
     - User related feature (financial specific - income)
     - User feature (financial specific - credit scores)
     - User feature (financial specific - credit lines)
-
-- [**Detailed Code and Plotting**](pending)
+- [**Detailed Code and Plotting**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/code/Lending_Club_Data_Exploration.ipynb)
 
 
 
