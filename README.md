@@ -173,10 +173,22 @@
 ### 8. Loar_Grade_Prediction
 - Modeling
     - Logistic Regression
+        - Model Performance
+            - accuracy_train: 0.5418
+            - accuracy_test: 0.5342
         - Confusion Matrix
             - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Loan_Grade_Prediction/Confusion_Matrix_LR.png" width="600" height="240"> 
-    - Random Forest 
+    - Random Forest
+            - accuracy_train: 0.5912
+            - accuracy_test: 0.5167
+        - Confusion Matrix
+            - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Loan_Grade_Prediction/Confusion_Matrix_RF.png" width="600" height="240">         
     - Gradient Boosting Decision Tree
+        - Random Forest
+            - accuracy_train: 0.6686
+            - accuracy_test: 0.5479
+        - Confusion Matrix
+            - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Loan_Grade_Prediction/Confusion_Matrix_GDBT.png" width="600" height="240">    
 - Summary
     - Feature Conclusion
         - Features' coefficients estimated by Logistic Regression: pending
