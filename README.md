@@ -11,10 +11,10 @@ pending-report
     - Second, evaluating interest rate precisely could bring an additional incentive for those who are willing to "lend" money and also attain a balance between demand (borrowers) and supply (lenders).
 - As a result, some suitable metrics must be determined by looking at the dataset.
     - **Metrics**
-        - loan status: To evaluate the loan repayment capacity for each loan applicant.
-        - grade: A good categorical index to know the loan repayment capacity.
-        - interest rate: A numerical feature playing a role of balancing demand and supply. 
-- In our work, we bulid models to predict **Default**, **Interest Rate** and **Loan Grade**.
+        - **loan status**: To evaluate the loan repayment capacity for each loan applicant.
+        - **interest rate**: A numerical feature playing a role of balancing demand and supply. 
+        - **grade**: A good categorical index to know the loan repayment capacity.       
+- In our work, we bulid models to predict **Default(loan status)**, **Interest Rate** and **Loan Grade**.
 
 ## Dataset description
 - Dataset is downloaded from [**Lending Club Statistics**](https://www.lendingclub.com/info/download-data.action).
@@ -119,6 +119,10 @@ pending-report
 ### 6. Default_Prediction
 - Modeling
     - Logistic Regression
+        - Model Performance
+            - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Default_Prediction/Model_Performance_LR.png">
+        - Confusion Matrix
+            - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Default_Prediction/Confusion_Matrix_LR.png">
     - Random Forest 
     - Gradient Boosting Decision Tree
 - Summary
