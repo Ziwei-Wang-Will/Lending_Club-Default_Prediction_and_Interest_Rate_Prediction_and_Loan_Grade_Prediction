@@ -118,13 +118,21 @@ pending-report
 
 ### 6. Default_Prediction
 - Modeling
-    - Logistic Regression
+    - **Logistic Regression**
         - Model Performance
             - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Default_Prediction/Model_Performance_LR.png" width="360" height="360">
         - Confusion Matrix
             - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Default_Prediction/Confusion_Matrix_LR.png" width="360" height="100">
-    - Random Forest 
-    - Gradient Boosting Decision Tree
+    - **Random Forest** 
+        - Model Performance
+            - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Default_Prediction/Model_Performance_RF.png" width="360" height="360">
+        - Confusion Matrix
+            - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Default_Prediction/Confusion_Matrix_RF.png" width="360" height="100">
+    - **Gradient Boosting Decision Tree**
+        - Model Performance
+            - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Default_Prediction/Model_Performance_GDBT.png" width="360" height="360">
+        - Confusion Matrix
+            - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Default_Prediction/Confusion_Matrix_GDBT.png" width="360" height="100">
 - Summary
     - Feature Conclusion
         - Features' coefficients estimated by Logistic Regression: pending
