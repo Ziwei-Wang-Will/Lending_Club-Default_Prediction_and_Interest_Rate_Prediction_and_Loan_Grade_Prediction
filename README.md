@@ -2,7 +2,7 @@
 
 <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Lending_Club_image.jpg" width="660" height="240">
 
-pending-report
+[**Code**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/tree/master/code)
 
 ## Project Objectives
 
@@ -173,6 +173,8 @@ pending-report
 ### 8. Loar_Grade_Prediction
 - Modeling
     - Logistic Regression
+        - Confusion Matrix
+            - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Loan_Grade_Prediction/Confusion_Matrix_LR.png" width="360" height="240"> 
     - Random Forest 
     - Gradient Boosting Decision Tree
 - Summary
