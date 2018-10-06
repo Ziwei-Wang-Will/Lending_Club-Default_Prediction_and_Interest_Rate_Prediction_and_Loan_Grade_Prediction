@@ -120,9 +120,9 @@ pending-report
 - Modeling
     - Logistic Regression
         - Model Performance
-            - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Default_Prediction/Model_Performance_LR.png">
+            - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Default_Prediction/Model_Performance_LR.png" width="240" height="240">
         - Confusion Matrix
-            - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Default_Prediction/Confusion_Matrix_LR.png">
+            - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Default_Prediction/Confusion_Matrix_LR.png" width="360" height="240">
     - Random Forest 
     - Gradient Boosting Decision Tree
 - Summary
