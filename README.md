@@ -174,7 +174,7 @@
 - Modeling
     - Logistic Regression
         - Confusion Matrix
-            - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Loan_Grade_Prediction/Confusion_Matrix_LR.png" width="360" height="240"> 
+            - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Loan_Grade_Prediction/Confusion_Matrix_LR.png" width="480" height="240"> 
     - Random Forest 
     - Gradient Boosting Decision Tree
 - Summary
