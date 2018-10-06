@@ -135,7 +135,9 @@ pending-report
             - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Default_Prediction/Confusion_Matrix_GDBT.png" width="360" height="100">
 - Summary
     - Feature Conclusion
-        - Features' coefficients estimated by Logistic Regression: pending
+        - Features' coefficients estimated by Logistic Regression: 
+            - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Default_Prediction/Features_positive_coefficients_LR.png" width="200" height="480">
+            - 
         - Features' coefficients estimated by Logistic Regression:pending
         - Features' importances by Random Forest: pending
     - Model Deployment
