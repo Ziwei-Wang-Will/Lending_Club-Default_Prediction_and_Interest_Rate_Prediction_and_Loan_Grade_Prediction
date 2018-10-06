@@ -108,12 +108,12 @@
 - [**Detailed Code**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/code/Lending_Club_Data_Preprocessing_and_Feature_Engineering.ipynb)
 
 ### 4. Outliers imputation
-- Manipulate outliers with IQR method
+- Manipulate outliers with **IQR method**
 - [**Detailed Code**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/code/Lending_Club_Data_Preprocessing_and_Feature_Engineering.ipynb)
 
 ### 5. Feature selection by feature significance
-- Numerical type of features: using t-test
-- Categorical type of features: using chi-square test
+- Numerical type of features: using **t-test**
+- Categorical type of features: using **chi-square test**
 - [**Detailed Code**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/code/Lending_Club_Data_Preprocessing_and_Feature_Engineering.ipynb)
 
 ### 6. Default_Prediction
