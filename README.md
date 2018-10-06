@@ -137,8 +137,10 @@ pending-report
     - Feature Conclusion
         - Features' coefficients estimated by Logistic Regression: 
             - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Default_Prediction/Features_positive_coefficients_LR.png" width="360" height="480">
-            - 
-        - Features' coefficients estimated by Logistic Regression:pending
+            - Once the 'difference between issue and next payment day', the 'monthly payment owed by the borrower if the loan originates', and 'levels of day difference between issue and last payment day' become larger, the higher probability that a loan applicant might be default.
+        - Features' coefficients estimated by Logistic Regression:
+            - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Default_Prediction/Features_negative_coefficients_LR.png" width="360" height="480">
+        - Features' coefficients estimated by Logistic Regression:
         - Features' importances by Random Forest: pending
     - Model Deployment
         - pending
