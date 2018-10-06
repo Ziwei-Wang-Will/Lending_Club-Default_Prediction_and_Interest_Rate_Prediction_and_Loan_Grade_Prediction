@@ -136,7 +136,7 @@ pending-report
 - Summary
     - Feature Conclusion
         - Features' coefficients estimated by Logistic Regression: 
-            - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Default_Prediction/Features_positive_coefficients_LR.png" width="200" height="480">
+            - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Default_Prediction/Features_positive_coefficients_LR.png" width="360" height="480">
             - 
         - Features' coefficients estimated by Logistic Regression:pending
         - Features' importances by Random Forest: pending
