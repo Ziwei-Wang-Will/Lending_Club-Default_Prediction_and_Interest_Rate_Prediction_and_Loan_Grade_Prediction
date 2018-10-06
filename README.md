@@ -158,16 +158,17 @@ pending-report
 - Summary
     - Feature Conclusion (by Random Forest Regression)
         - Top 10 most important features provided by the Random Forest. 
-            - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Interest_Rate_Prediction/Features_importance_RF.png" width="320" height="360">       
+            - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Interest_Rate_Prediction/Features_importance_RF.png" width="300" height="320">       
         - Even though the model explained variance is low in our work, we can observed that the top three features explaind much more model total variances than the others. We want to explain the relationship between these features and the response feature (interest rate on the loan). 
             - The first feature, **term** (The number of payments on the loan. Values are in months and can be either 36 or 60) is important to int_rate, because higher term indicates higher int_rate. 
             - The second & thrid feature, if a loan applicant had more **bc_open_to_buy** (Total open to buy on revolving bankcards) and **percent_bc_gt_75** (Percentage of all bankcard accounts > 75% of limit), the int_rate might be higher since a loan applicant might under greater financial pressure in the past.
     - Model Comparison (Metric evaulations)
-        - At here, I have two defined objectives, mean squared error and R-squared, to evaluate a continuous regression problem. For the Lending Club, it can decide a model deployment by a predefined objective. It might care a lot on the MSE as long as the variance is not too high. Thus, GB Regression is preferred here.
+        - At here, I have two defined objectives, mean squared error and R-squared, to evaluate a continuous regression problem. For the Lending Club, it can decide a model deployment by a predefined objective. It might care a lot on the **MSE** as long as the variance is not too high. Thus, **GB Regression** is preferred here.
         - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Interest_Rate_Prediction/Model_Deployment.png" width="560" height="140">
     - Next Step
-        - pending
-- [**Detailed Code**](pending)
+        - The predictive power of our models is week here(MSE is high), this might because that Lending Club decide the interest rate based more on set of qualitative norms or quantitative data that are not in our dataset. 
+        - To build better models, we should spend more time to understand Lending Club's business model and interest rate decision making process to get more related and complete dataset.
+- [**Detailed Code**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/code/Lending_Club_Interest_Rate_Prediction.ipynb)
 
 ### 8. Loar_Grade_Prediction
 - Modeling
