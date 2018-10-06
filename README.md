@@ -193,17 +193,21 @@
 - Summary
     - **Feature Conclusion**
         - Features' coefficients estimated by Logistic Regression - Positive Direction: 
-            - Once the 'difference between issue and next payment day', the 'monthly payment owed by the borrower if the loan originates', and 'levels of day difference between issue and last payment day' become larger, the higher probability that a loan applicant might be default.
-            - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Loan_Grade_Prediction/Features_positive_coefficients_LR.png" width="360" height="400">           
+            - Positive Direction: As long as the **funded_amnt_inv** (total amount committed by investors for that loan at that point in time), **loan_amnt** (The listed amount of the loan applied for by the borrower), and **out_prncp_inv** (Remaining outstanding principal for portion of total amount funded by investors) become larger, the higher probability that a loan applicantion might be graded with a lower grade.
+            - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Loan_Grade_Prediction/Features_positive_coefficients_LR.png" width="300" height="400">           
         - Features' coefficients estimated by Logistic Regression - Negative Direction:
-            - As long as the 'difference between issue and last payment day', 'payment received to date for portion of total amount funded by investors', and 'principal received to date become larger', the lower probability that a loan applicant might be default.
+            -  When the **total_rec_int** (interest received to date), **installment**(The monthly payment owed by the borrower if the loan originates), and **term**(The number of payments on the loan) become smaller, the higher probability that a loan applicantion might be graded with a lower grade.
             - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Loan_Grade_Prediction/Features_negative_coefficients_LR.png" width="360" height="400">
         - Features' importances by Random Forest: 
-            - Six of the feature importances provided by Random Forest are overlapped with the results of feature importance by Logistic Regression. These top 10 features have a better prediction power compared with the rest of the features in Random Forest model.
-            - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Loan_Grade_Prediction/Features_importance_RF.png" width="360" height="400">
+            - Nine of the feature importances provided by Random Forest are overlapped with the results by Logistic Regression. These top 10 features have a better prediction power compared with the rest of the features in Random Forest model.
+            - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Loan_Grade_Prediction/Features_importance_RF.png" width="300" height="400">
     - **Model Deployment**
-        - pending
-- [**Detailed Code**](pending)
+        - - For the Lending Club, it can decide a model deployment by a predefined objective. At here, my defined objective is the highest 'accuracy' score across all lables (grade A to G). However, it might be better (or more intuitive) for the Lending Club to target at the accuracy score of 'lower grades' (such as from grade D to G). Thus, **GB Regression** is preferred here.
+        - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Loan_Grade_Prediction/Model_Deployment.png" width="560" height="140"> 
+    - **Next Step**
+        - The predictive power of our models is week here(Accuracy is low, especially in lower grade prediction), this might because that Lending Club decide the loan grade based more on set of qualitative norms or quantitative data that are not in our dataset. 
+        - To build better models, we should spend more time to understand Lending Club's business model and loan grade decision making process to get more related and complete dataset.
+- [**Detailed Code**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/code/Lending_Club_Loan_Grade_Prediction.ipynb)
 
 
 
