@@ -164,7 +164,7 @@ pending-report
             - The second & thrid feature, if a loan applicant had more **bc_open_to_buy** (Total open to buy on revolving bankcards) and **percent_bc_gt_75** (Percentage of all bankcard accounts > 75% of limit), the int_rate might be higher since a loan applicant might under greater financial pressure in the past.
     - Model Comparison (Metric evaulations)
         - At here, I have two defined objectives, mean squared error and R-squared, to evaluate a continuous regression problem. For the Lending Club, it can decide a model deployment by a predefined objective. It might care a lot on the MSE as long as the variance is not too high. Thus, GB Regression is preferred here.
-        - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Interest_Rate_Prediction/Model_Deployment.png" width="560" height="160">
+        - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Interest_Rate_Prediction/Model_Deployment.png" width="560" height="140">
     - Next Step
         - pending
 - [**Detailed Code**](pending)
