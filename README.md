@@ -147,7 +147,7 @@ pending-report
     - **Model Deployment**
         - For the Lending Club, it can decide a model deployment by a predefined objective. It might care a lot on predicting the correct **Default** applications, so a higher **recall** score becomes extremely important.
         - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Default_Prediction/Model_Deployment.png" width="360" height="120">
-- [**Detailed Code**](pending)
+- [**Detailed Code**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/code/Lending_Club_Default_Prediction.ipynb)
 
 ### 7. Interest_Rate_Prediction
 - Modeling
