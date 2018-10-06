@@ -136,10 +136,10 @@
 - Summary
     - **Feature Conclusion**
         - Features' coefficients estimated by **Logistic Regression** - **Positive Direction**: 
-            - Once the 'difference between issue and next payment day', the 'monthly payment owed by the borrower if the loan originates', and 'levels of day difference between issue and last payment day' become larger, the higher probability that a loan applicant might be default.
+            - Once the **difference between issue and next payment day**, the **monthly payment owed by the borrower if the loan originates**, and **levels of day difference between issue and last payment day** become larger, the higher probability that a loan applicant might be default.
             - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Default_Prediction/Features_positive_coefficients_LR.png" width="360" height="400">           
         - Features' coefficients estimated by **Logistic Regression** - **Negative Direction**:
-            - As long as the 'difference between issue and last payment day', 'payment received to date for portion of total amount funded by investors', and 'principal received to date become larger', the lower probability that a loan applicant might be default.
+            - As long as the **difference between issue and last payment day**, **payment received to date for portion of total amount funded by investors**, and **principal received to date become larger**, the lower probability that a loan applicant might be default.
             - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Default_Prediction/Features_negative_coefficients_LR.png" width="360" height="400">
         - Features' importances by **Random Forest**: 
             - Six of the feature importances provided by Random Forest are overlapped with the results of feature importance by Logistic Regression. These top 10 features have a better prediction power compared with the rest of the features in Random Forest model.
