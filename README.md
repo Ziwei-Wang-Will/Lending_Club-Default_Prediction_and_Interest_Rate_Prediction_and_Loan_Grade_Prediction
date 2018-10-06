@@ -156,45 +156,52 @@
     - Random Forest Regression
     - Gradient Boosting Regression
 - Summary
-    - Feature Conclusion (by Random Forest Regression)
+    - **Feature Conclusion (by Random Forest Regression)**
         - Top 10 most important features provided by the Random Forest. 
             - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Interest_Rate_Prediction/Features_importance_RF.png" width="300" height="320">       
         - Even though the model explained variance is low in our work, we can observed that the top three features explaind much more model total variances than the others. We want to explain the relationship between these features and the response feature (interest rate on the loan). 
             - The first feature, **term** (The number of payments on the loan. Values are in months and can be either 36 or 60) is important to int_rate, because higher term indicates higher int_rate. 
             - The second & thrid feature, if a loan applicant had more **bc_open_to_buy** (Total open to buy on revolving bankcards) and **percent_bc_gt_75** (Percentage of all bankcard accounts > 75% of limit), the int_rate might be higher since a loan applicant might under greater financial pressure in the past.
-    - Model Comparison (Metric evaulations)
+    - **Model Comparison (Metric evaulations)**
         - At here, I have two defined objectives, mean squared error and R-squared, to evaluate a continuous regression problem. For the Lending Club, it can decide a model deployment by a predefined objective. It might care a lot on the **MSE** as long as the variance is not too high. Thus, **GB Regression** is preferred here.
         - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Interest_Rate_Prediction/Model_Deployment.png" width="560" height="140">
-    - Next Step
+    - **Next Step**
         - The predictive power of our models is week here(MSE is high), this might because that Lending Club decide the interest rate based more on set of qualitative norms or quantitative data that are not in our dataset. 
         - To build better models, we should spend more time to understand Lending Club's business model and interest rate decision making process to get more related and complete dataset.
 - [**Detailed Code**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/code/Lending_Club_Interest_Rate_Prediction.ipynb)
 
 ### 8. Loar_Grade_Prediction
 - Modeling
-    - Logistic Regression
+    - **Logistic Regression**
         - Model Performance
             - accuracy_train: 0.5418
             - accuracy_test: 0.5342
         - Confusion Matrix
             - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Loan_Grade_Prediction/Confusion_Matrix_LR.png" width="600" height="240"> 
-    - Random Forest
+    - **Random Forest**
+        - Model Performance
             - accuracy_train: 0.5912
             - accuracy_test: 0.5167
         - Confusion Matrix
             - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Loan_Grade_Prediction/Confusion_Matrix_RF.png" width="600" height="240">         
-    - Gradient Boosting Decision Tree
-        - Random Forest
+    - **Gradient Boosting Decision Tree**
+        - Model Performance
             - accuracy_train: 0.6686
             - accuracy_test: 0.5479
         - Confusion Matrix
             - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Loan_Grade_Prediction/Confusion_Matrix_GDBT.png" width="600" height="240">    
 - Summary
-    - Feature Conclusion
-        - Features' coefficients estimated by Logistic Regression: pending
-        - Features' coefficients estimated by Logistic Regression:pending
-        - Features' importances by Random Forest: pending
-    - Model Deployment
+    - **Feature Conclusion**
+        - Features' coefficients estimated by Logistic Regression - Positive Direction: 
+            - Once the 'difference between issue and next payment day', the 'monthly payment owed by the borrower if the loan originates', and 'levels of day difference between issue and last payment day' become larger, the higher probability that a loan applicant might be default.
+            - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Loan_Grade_Prediction/Features_positive_coefficients_LR.png" width="360" height="400">           
+        - Features' coefficients estimated by Logistic Regression - Negative Direction:
+            - As long as the 'difference between issue and last payment day', 'payment received to date for portion of total amount funded by investors', and 'principal received to date become larger', the lower probability that a loan applicant might be default.
+            - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Loan_Grade_Prediction/Features_negative_coefficients_LR.png" width="360" height="400">
+        - Features' importances by Random Forest: 
+            - Six of the feature importances provided by Random Forest are overlapped with the results of feature importance by Logistic Regression. These top 10 features have a better prediction power compared with the rest of the features in Random Forest model.
+            - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Loan_Grade_Prediction/Features_importance_RF.png" width="360" height="400">
+    - **Model Deployment**
         - pending
 - [**Detailed Code**](pending)
 
