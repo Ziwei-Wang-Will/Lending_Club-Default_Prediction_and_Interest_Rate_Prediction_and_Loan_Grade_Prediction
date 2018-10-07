@@ -14,12 +14,12 @@
         - **loan status**: To evaluate the loan repayment capacity for each loan applicant.
         - **interest rate**: A numerical feature playing a role of balancing demand and supply. 
         - **grade**: A good categorical index to know the loan repayment capacity.       
-- In our work, we bulid models to predict **Default(loan status)**, **Interest Rate** and **Loan Grade**.
+- In our work, we built models to predict **Default(loan status)**, **Interest Rate** and **Loan Grade**.
 
 ## Dataset description
-- Dataset is downloaded from [**Lending Club Statistics**](https://www.lendingclub.com/info/download-data.action).
-    - These files contain complete loan data for all loans issued in 2018Q1, including the current loan status (Current, Late, Fully Paid, etc.) and latest payment information. 
-    - The file containing loan data through the "present" contains complete loan data for all loans issued through the previous completed calendar quarter. 
+- Dataset was downloaded from [**Lending Club Statistics**](https://www.lendingclub.com/info/download-data.action).
+    - The file contains complete loan data for all loans issued in 2018Q1, including the current loan status (Current, Late, Fully Paid, etc.) and latest payment information. 
+    - The file contains loan data through the "present" contains complete loan data for all loans issued through the previous completed calendar quarter. 
     - 'LoanStats_2018Q1.csv' contains loan application records from January 2018 to March 2018.
         - 107866 loan applications.
         - 145 features.
@@ -54,12 +54,12 @@
 ### 1. Data_Exploration
 - Read in the data
     - In total, 145 features, 107866 loan applications in this dataset.
-    - Will demonstrate more meaningful visualizations in later 'Data_Preprocessing_and_Feature_Engineering' section.
+    - We demonstrated more meaningful visualizations in later 'Data_Preprocessing_and_Feature_Engineering' section.
 - Exploratory Data Analysis (EDA)
-    - User related features (basic information)
-    - User related feature (financial specific - income)
-    - User feature (financial specific - credit scores)
-    - User feature (financial specific - credit lines)
+    - Explored user related features (basic information)
+    - Explored user related feature (financial specific - income)
+    - Explored user feature (financial specific - credit scores)
+    - Explored user feature (financial specific - credit lines)
 - [**Detailed Code and Plotting**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/code/Lending_Club_Data_Exploration.ipynb)
 
 ### 2. Missing values imputation
@@ -68,29 +68,29 @@
         - grade
         - int_rate
         - loan_status
-    - For this section, I mainly focus in 'loan_status'. 
-        - My goal is trying to predict the loan repayment capacity for each loan applicant of each loan application. Furthermore, I started by creating a boolean type of 'loan_status'.
-        - Create 'loan_status_binary', my target response variable 
+    - For this section, I mainly focused in 'loan_status'. 
+        - My goal was trying to predict the loan repayment capacity for each loan applicant of each loan application. Furthermore, I started by creating a boolean type of 'loan_status'.
+        - Created 'loan_status_binary', my target response variable 
         - 0 means a loan_status is either 'Fully Paid' or 'Current'
         - 1 means the rest values of loan_status 
 - Numerical features
-    - Deal with numerical features containing at least 80% NA values.
+    - Dealed with numerical features containing at least 80% NA values.
         - Irrelevant features
         - Joint-type features
         - Secondary applicant related features
         - Hardship related features
         - Settlement related features
         - Other numerical features
-    - Deal with numerical features containing at least 1 NA vlaue.
+    - Dealed with numerical features containing at least 1 NA vlaue.
         - Month type features
         - The rest of features 
 - Categorical features
-    - Deal with categorical features containing at least 80% NA values.
+    - Dealed with categorical features containing at least 80% NA values.
         - Irrelevant features
         - Hardship related features
         - Settlement related features
         - Other features
-    - Other categorical features containing at least one NA value.
+    - Dealed with other categorical features containing at least one NA value.
         - Month type features
         - The rest of features
 - [**Detailed Code**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/code/Lending_Club_Data_Preprocessing_and_Feature_Engineering.ipynb)
@@ -102,13 +102,13 @@
 - Log transformation for skewed features
 - Final check
     - Final check I: NA values
-            - These are variables forgot to drop after complete the transformation
-    - Final check II: features with only one unique value among all records (no prediction power)
-    - Final check III: manually scan the data type & columns forgot to drop
+            - If these were variables forgot to drop after complete the transformation
+    - Final check II: If these were features with only one unique value among all records (no prediction power)
+    - Final check III: Manually scanned the data type & columns forgot to drop
 - [**Detailed Code**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/code/Lending_Club_Data_Preprocessing_and_Feature_Engineering.ipynb)
 
 ### 4. Outliers imputation
-- Manipulate outliers with **IQR method**
+- Manipulated outliers with **IQR method**
 - [**Detailed Code**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/code/Lending_Club_Data_Preprocessing_and_Feature_Engineering.ipynb)
 
 ### 5. Feature selection by feature significance
