@@ -24,7 +24,7 @@
         - 107866 loan applications.
         - 145 features.
     - [**Data is available here**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/data/LoanStats_2018Q1.csv.zip)
-- I classify all 145 features into eight types:
+- I classified all 145 features into eight types:
     - User feature (general)
     - User feature (financial specific)
         - Income
@@ -74,26 +74,26 @@
         - 0 means a loan_status is either 'Fully Paid' or 'Current'
         - 1 means the rest values of loan_status 
 - Numerical features
-    - Dealed with numerical features containing at least 80% NA values.
+    - Dealt with numerical features containing at least 80% NA values.
         - Irrelevant features
         - Joint-type features
         - Secondary applicant related features
         - Hardship related features
         - Settlement related features
         - Other numerical features
-    - Dealed with numerical features containing at least 1 NA vlaue.
+    - Dealt with numerical features containing at least 1 NA vlaue.
         - Month type features
         - The rest of features 
 - Categorical features
-    - Dealed with categorical features containing at least 80% NA values.
+    - Dealt with categorical features containing at least 80% NA values.
         - Irrelevant features
         - Hardship related features
         - Settlement related features
         - Other features
-    - Dealed with other categorical features containing at least one NA value.
+    - Dealt with other categorical features containing at least one NA value.
         - Month type features
         - The rest of features
-- [**Detailed Code**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/code/Lending_Club_Data_Preprocessing_and_Feature_Engineering.ipynb)
+- [**Detailed Code and Plotting**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/code/Lending_Club_Data_Preprocessing_and_Feature_Engineering.ipynb)
 
 ### 3. Feature transformation
 - Datetime type features transformation
@@ -105,16 +105,16 @@
             - If these were variables forgot to drop after complete the transformation
     - Final check II: If these were features with only one unique value among all records (no prediction power)
     - Final check III: Manually scanned the data type & columns forgot to drop
-- [**Detailed Code**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/code/Lending_Club_Data_Preprocessing_and_Feature_Engineering.ipynb)
+- [**Detailed Code and Plotting**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/code/Lending_Club_Data_Preprocessing_and_Feature_Engineering.ipynb)
 
 ### 4. Outliers imputation
 - Manipulated outliers with **IQR method**
-- [**Detailed Code**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/code/Lending_Club_Data_Preprocessing_and_Feature_Engineering.ipynb)
+- [**Detailed Code and Plotting**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/code/Lending_Club_Data_Preprocessing_and_Feature_Engineering.ipynb)
 
 ### 5. Feature selection by feature significance
 - Numerical type of features: using **t-test**
 - Categorical type of features: using **chi-square test**
-- [**Detailed Code**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/code/Lending_Club_Data_Preprocessing_and_Feature_Engineering.ipynb)
+- [**Detailed Code and Plotting**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/code/Lending_Club_Data_Preprocessing_and_Feature_Engineering.ipynb)
 
 ### 6. Default_Prediction
 - Modeling
@@ -136,18 +136,18 @@
 - Summary
     - **Feature Conclusion**
         - Features' coefficients estimated by **Logistic Regression** - **Positive Direction**: 
-            - Once the **difference between issue and next payment day**, the **monthly payment owed by the borrower if the loan originates**, and **levels of day difference between issue and last payment day is less than 6 months** become larger, the higher probability that a loan applicant might be default.
+            - Once the **difference between issue and next payment day**, the **monthly payment owed by the borrower if the loan originates**, and **levels of day difference between issue and last payment day is less than 6 months** became larger, the higher probability that a loan applicant might be default.
             - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Default_Prediction/Features_positive_coefficients_LR.png" width="360" height="400">           
         - Features' coefficients estimated by **Logistic Regression** - **Negative Direction**:
-            - As long as the **difference between issue and last payment day  is more than 6 months**, **payment received to date for portion of total amount funded by investors**, and **principal received to date become larger**, the lower probability that a loan applicant might be default.
+            - As long as the **difference between issue and last payment day  is more than 6 months**, **payment received to date for portion of total amount funded by investors**, and **principal received to date** became larger, the lower probability that a loan applicant might be default.
             - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Default_Prediction/Features_negative_coefficients_LR.png" width="360" height="400">
         - Features' importances by **Random Forest**: 
-            - Six of the feature importances provided by Random Forest are overlapped with the results of feature importance by Logistic Regression. These top 10 features have a better prediction power compared with the rest of the features in Random Forest model.
+            - Six of the feature importances provided by Random Forest were overlapped with the results of feature importance by Logistic Regression. These top 10 features had a better prediction power compared with the rest of the features in Random Forest model.
             - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Default_Prediction/Features_importance_RF.png" width="360" height="400">
     - **Model Deployment**
         - For the Lending Club, it can decide a model deployment by a predefined objective. It might care a lot on predicting the correct **Default** applications, so a higher **recall** score becomes extremely important.
         - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Default_Prediction/Model_Deployment.png" width="360" height="120">
-- [**Detailed Code**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/code/Lending_Club_Default_Prediction.ipynb)
+- [**Detailed Code and Plotting**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/code/Lending_Club_Default_Prediction.ipynb)
 
 ### 7. Interest_Rate_Prediction
 - Modeling
@@ -159,16 +159,16 @@
     - **Feature Conclusion (by Random Forest Regression)**
         - Top 10 most important features provided by the Random Forest. 
             - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Interest_Rate_Prediction/Features_importance_RF.png" width="300" height="320">       
-        - Even though the model explained variance is low in our work, we can observed that the top three features explaind much more model total variances than the others. We want to explain the relationship between these features and the response feature (interest rate on the loan). 
-            - The first feature, **term** (The number of payments on the loan. Values are in months and can be either 36 or 60) is important to int_rate, because higher term indicates higher int_rate. 
+        - Even though the model explained variance was low in our work, we noticed that the top three features explaind much more model total variances than the others. We want to explain the relationship between these features and the response feature (interest rate on the loan). 
+            - The first feature, **term** (The number of payments on the loan. Values are in months and can be either 36 or 60) was important to int_rate, because higher term indicated higher int_rate. 
             - The second & thrid feature, if a loan applicant had more **bc_open_to_buy** (Total open to buy on revolving bankcards) and **percent_bc_gt_75** (Percentage of all bankcard accounts > 75% of limit), the int_rate might be higher since a loan applicant might under greater financial pressure in the past.
     - **Model Comparison (Metric evaulations)**
-        - At here, I have two defined objectives, mean squared error and R-squared, to evaluate a continuous regression problem. For the Lending Club, it can decide a model deployment by a predefined objective. It might care a lot on the **MSE** as long as the variance is not too high. Thus, **GB Regression** is preferred here.
+        - At here, I had two defined objectives, mean squared error and R-squared, to evaluate a continuous regression problem. For the Lending Club, it can decide a model deployment by a predefined objective. It might care a lot on the **MSE** as long as the variance is not too high. Thus, **GB Regression** is preferred here.
         - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Interest_Rate_Prediction/Model_Deployment.png" width="560" height="140">
     - **Next Step**
-        - The predictive power of our models is week here(MSE is high), this might because that Lending Club decide the interest rate based more on set of qualitative norms or quantitative data that are not in our dataset. 
+        - The predictive power of our models were week here(MSEs were high), this might because that Lending Club decide the interest rate based more on set of qualitative norms or quantitative data that are not in our dataset. 
         - To build better models, we should spend more time to understand Lending Club's business model and interest rate decision making process to get more related and complete dataset.
-- [**Detailed Code**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/code/Lending_Club_Interest_Rate_Prediction.ipynb)
+- [**Detailed Code and Plotting**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/code/Lending_Club_Interest_Rate_Prediction.ipynb)
 
 ### 8. Loar_Grade_Prediction
 - Modeling
@@ -193,21 +193,21 @@
 - Summary
     - **Feature Conclusion**
         - Features' coefficients estimated by **Logistic Regression** - **Positive** Direction: 
-            - Positive Direction: As long as the **funded_amnt_inv** (total amount committed by investors for that loan at that point in time), **loan_amnt** (The listed amount of the loan applied for by the borrower), and **out_prncp_inv** (Remaining outstanding principal for portion of total amount funded by investors) become larger, the higher probability that a loan applicantion might be graded with a lower grade.
+            - Positive Direction: As long as the **funded_amnt_inv** (total amount committed by investors for that loan at that point in time), **loan_amnt** (The listed amount of the loan applied for by the borrower), and **out_prncp_inv** (Remaining outstanding principal for portion of total amount funded by investors) became larger, the higher probability that a loan applicantion might be graded with a lower grade.
             - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Loan_Grade_Prediction/Features_positive_coefficients_LR.png" width="300" height="400">           
         - Features' coefficients estimated by **Logistic Regression** - **Negative** Direction:
-            -  When the **total_rec_int** (interest received to date), **installment**(The monthly payment owed by the borrower if the loan originates), and **term**(The number of payments on the loan) become smaller, the higher probability that a loan applicantion might be graded with a lower grade.
+            -  When the **total_rec_int** (interest received to date), **installment**(The monthly payment owed by the borrower if the loan originates), and **term**(The number of payments on the loan) became smaller, the higher probability that a loan applicantion might be graded with a lower grade.
             - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Loan_Grade_Prediction/Features_negative_coefficients_LR.png" width="360" height="400">
         - Features' importances by **Random Forest**: 
-            - Nine of the feature importances provided by Random Forest are overlapped with the results by Logistic Regression. These top 10 features have a better prediction power compared with the rest of the features in Random Forest model.
+            - Nine of the feature importances provided by Random Forest were overlapped with the results by Logistic Regression. These top 10 features had a better prediction power compared with the rest of the features in Random Forest model.
             - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Loan_Grade_Prediction/Features_importance_RF.png" width="300" height="400">
     - **Model Deployment**
         - For the Lending Club, it can decide a model deployment by a predefined objective. At here, my defined objective is the highest 'accuracy' score across all lables (grade A to G). However, it might be better (or more intuitive) for the Lending Club to target at the accuracy score of 'lower grades' (such as from grade D to G). Thus, **GB Regression** is preferred here.
         - <img src="https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/images/Loan_Grade_Prediction/Model_Deployment.png" width="560" height="140"> 
     - **Next Step**
-        - The predictive power of our models is week here(Accuracy is low, especially in lower grade prediction), this might because that Lending Club decide the loan grade based more on set of qualitative norms or quantitative data that are not in our dataset. 
+        - The predictive power of our models were week here(Accuracies were low, especially in lower grade prediction), this might because that Lending Club decide the loan grade based more on set of qualitative norms or quantitative data that are not in our dataset. 
         - To build better models, we should spend more time to understand Lending Club's business model and loan grade decision making process to get more related and complete dataset.
-- [**Detailed Code**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/code/Lending_Club_Loan_Grade_Prediction.ipynb)
+- [**Detailed Code and Plotting**](https://github.com/will-zw-wang/Lending_Club-Default_Prediction_and_Interest_Rate_Prediction_and_Loan_Grade_Prediction/blob/master/code/Lending_Club_Loan_Grade_Prediction.ipynb)
 
 
 
